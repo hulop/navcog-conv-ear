@@ -1,0 +1,6 @@
+[submodule "mvn-build/home/MapService"]
+	path = mvn-build/home/MapService
+	url = https://github.com/hulop/MapService
+[submodule "mvn-build/home/ConversationServiceWatson"]
+	path = mvn-build/home/ConversationServiceWatson
+	url = https://github.com/hulop/ConversationServiceWatson
