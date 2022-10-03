@@ -1,0 +1,28 @@
+version: "2.3"
+
+
+services:
+  liberty:
+    build:
+      context: .
+      args:
+        - app=./navcog-conv.ear
+    env_file: local-test.env
+    ports:
+    - "9080:9080"
+    networks:
+      - mongodb_network
+
+  mongodb:
+    image : mongo:3.4.3
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./mongodb/database:/data/db
+    networks:
+      - mongodb_network
+
+networks:
+  mongodb_network:
+    name: mongodb_network

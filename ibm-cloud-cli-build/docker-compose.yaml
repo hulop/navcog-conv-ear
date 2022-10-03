@@ -1,0 +1,10 @@
+version: "2.3"
+
+services:
+  ibmcloud-cli:
+    build:
+      context: .
+    volumes:
+      - "./code-engine.env:/home/developer/code-engine.env"
+    command:
+      - bash
