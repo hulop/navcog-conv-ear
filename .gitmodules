@@ -4,3 +4,6 @@
 [submodule "mvn-build/home/ConversationServiceWatson"]
 	path = mvn-build/home/ConversationServiceWatson
 	url = https://github.com/hulop/ConversationServiceWatson
+[submodule "mvn-build/home/QueryService"]
+	path = mvn-build/home/QueryService
+	url = https://github.com/hulop/QueryService.git
